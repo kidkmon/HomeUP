@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: ac8c785717d68b84a9144612fa82bb62
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Almofada
+    100002: ALMOFADAS:Almofada
+    100004: ALMOFADAS:Almofada1
+    100006: ALMOFADAS:Almofada2
+    100008: ALMOFADAS:Almofada4
+    100010: ALMOFADAS:Almofadas
+    100012: Armario
+    100014: Door
+    100016: MEsa
+    100018: Parede_Principal
+    100020: //RootNode
+    100022: Trono
+    400000: Almofada
+    400002: ALMOFADAS:Almofada
+    400004: ALMOFADAS:Almofada1
+    400006: ALMOFADAS:Almofada2
+    400008: ALMOFADAS:Almofada4
+    400010: ALMOFADAS:Almofadas
+    400012: Armario
+    400014: Door
+    400016: MEsa
+    400018: Parede_Principal
+    400020: //RootNode
+    400022: Trono
+    2100000: VRayMtl1
+    2100002: ALMOFADAS_VRayMtl1
+    2300000: Almofada
+    2300002: ALMOFADAS:Almofada
+    2300004: ALMOFADAS:Almofada1
+    2300006: ALMOFADAS:Almofada2
+    2300008: ALMOFADAS:Almofada4
+    2300010: Armario
+    2300012: Door
+    2300014: MEsa
+    2300016: Parede_Principal
+    2300018: Trono
+    3300000: Almofada
+    3300002: ALMOFADAS:Almofada
+    3300004: ALMOFADAS:Almofada1
+    3300006: ALMOFADAS:Almofada2
+    3300008: ALMOFADAS:Almofada4
+    3300010: Armario
+    3300012: Door
+    3300014: MEsa
+    3300016: Parede_Principal
+    3300018: Trono
+    4300000: Parede_Principal
+    4300002: Armario
+    4300004: MEsa
+    4300006: ALMOFADAS:Almofada
+    4300008: ALMOFADAS:Almofada1
+    4300010: ALMOFADAS:Almofada2
+    4300012: ALMOFADAS:Almofada4
+    4300014: Almofada
+    4300016: Trono
+    4300018: Door
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
