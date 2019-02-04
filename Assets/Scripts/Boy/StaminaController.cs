@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class StaminaController : MonoBehaviour {
 
+	[Header("Stamina Animator")]
+	[SerializeField] private Animator staminaAnimator;
+
 	[Header("Panel")]
 	[SerializeField] private GameObject bgBlackPanel;
 	[SerializeField] private GameObject gameOverPanel;
@@ -36,10 +39,30 @@ public class StaminaController : MonoBehaviour {
 			player.SetActive(false);
 		}
 
+		StaminaAnimationState();
+
 		stamina.CurrentValue -= custStaminaValue * Time.deltaTime;
 	}
 
 	public void StaminaBonus(float bonusValue){
 		stamina.CurrentValue += bonusValue;
+	}
+
+	void StaminaAnimationState(){
+		if(stamina.CurrentValue > 80.0f){
+			staminaAnimator.SetBool("Up", true);
+			staminaAnimator.SetBool("Idle", false);
+			staminaAnimator.SetBool("Down", false);
+		}
+		else if(stamina.CurrentValue < 30.0f){
+			staminaAnimator.SetBool("Down", true);
+			staminaAnimator.SetBool("Idle", false);
+			staminaAnimator.SetBool("Up", false);
+		}
+		else{
+			staminaAnimator.SetBool("Idle", true);
+			staminaAnimator.SetBool("Up", false);
+			staminaAnimator.SetBool("Down", false);
+		}
 	}
 }

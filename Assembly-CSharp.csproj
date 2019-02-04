@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{157628EE-6CAD-8795-A604-80BFDAFB6274}</ProjectGuid>
+    <ProjectGuid>{EC585CEB-B6E2-69F1-98F5-8E7367D8A566}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Boy\BoyMovement.cs" />
+     <Compile Include="Assets\Scripts\Boy\BoyPowerUp.cs" />
      <Compile Include="Assets\Scripts\Boy\StaminaController.cs" />
      <Compile Include="Assets\Scripts\Fade\FadeScene.cs" />
      <Compile Include="Assets\Scripts\Follow\Follow.cs" />
@@ -64,18 +65,19 @@
      <Compile Include="Assets\Scripts\Pillow\BoundCollider.cs" />
      <Compile Include="Assets\Scripts\Pillow\Pillow.cs" />
      <Compile Include="Assets\Scripts\Pillow\PillowSpawn.cs" />
+     <Compile Include="Assets\Scripts\Pillow\PlatformCollision.cs" />
      <Compile Include="Assets\Scripts\Pillow\Spawm.cs" />
  <Reference Include="Cinemachine">
- <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/GGJ2019/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/HomeUp/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/GGJ2019/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/HomeUp/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/GGJ2019/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/HomeUp/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/GGJ2019/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/HomeUp/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

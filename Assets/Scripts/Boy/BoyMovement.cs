@@ -12,10 +12,8 @@ public class BoyMovement : MonoBehaviour {
 	[SerializeField] private float speed = 2.0f;
     [SerializeField] private float gravity = 2.0f;
 
-    [Header("Stamina Controller")]
-    [SerializeField] private float powerUpStamina;
-
     [HideInInspector] public float jumpSpeed = 0.0f;
+    [HideInInspector] public bool tenisPowerUp;
 
     public static bool gameStarted;
     public static float distanceTotal = 0.0f;
@@ -32,6 +30,7 @@ public class BoyMovement : MonoBehaviour {
         controller = GetComponent<CharacterController>();
         _playerRotation.eulerAngles = Vector3.zero;
         initialPosition = transform.position.y;
+        tenisPowerUp = false;
         StartCoroutine(StartGame());
     }
 
@@ -85,28 +84,22 @@ public class BoyMovement : MonoBehaviour {
     }
 
     void BoySetDistance(){
-        distanceTotal = Mathf.Round(transform.position.y - initialPosition);
+        float tempDistance = Mathf.Round(transform.position.y - initialPosition);
+        distanceTotal = (tempDistance > distanceTotal) ? tempDistance : distanceTotal;
         scoreTxt.text = distanceTotal.ToString();
     }
 
     //Collider logic
     void OnControllerColliderHit(ControllerColliderHit hit){
         try{
-            if(hit.gameObject.CompareTag("Stamina")){
-                GetComponents<AudioSource>()[1].Play();
-                hit.gameObject.SetActive(false);
-                GetComponent<StaminaController>().StaminaBonus(powerUpStamina);
-            }
-            else{
-                jumpSpeed = hit.gameObject.GetComponent<Pillow>().JumpForce;
-                try{
-                    if(!GetComponent<AudioSource>().isPlaying){
-                        GetComponent<AudioSource>().Play();
-                    }
-                    hit.gameObject.GetComponent<Animator>().SetTrigger("Jump");
+            jumpSpeed = tenisPowerUp ? GetComponent<BoyPowerUp>().powerUpTenis : hit.gameObject.GetComponent<Pillow>().JumpForce;
+            try{
+                if(!GetComponent<AudioSource>().isPlaying){
+                    GetComponent<AudioSource>().Play();
                 }
-                catch{}
+                hit.gameObject.GetComponent<Animator>().SetTrigger("Jump");
             }
+            catch{}
         }
         catch{
             jumpSpeed = 0;
