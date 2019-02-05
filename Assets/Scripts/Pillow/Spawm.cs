@@ -20,9 +20,7 @@ public class Spawm : MonoBehaviour {
 		
 		if(obj == null) return;
 		if(timeCheck > 10){
-			int randomPowerUp = Random.Range(1,5);
 			obj.gameObject.transform.GetChild(4).gameObject.SetActive(true);
-			obj.gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().SetInteger("PowerUp", randomPowerUp);
 			timeCheck = 0;
 		}
 		

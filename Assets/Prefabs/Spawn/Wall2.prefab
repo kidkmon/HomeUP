@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 212211490762527390}
   - component: {fileID: 95568717065916892}
   - component: {fileID: 65110328422681078}
+  - component: {fileID: 114108880741631430}
   - component: {fileID: 82438747952675310}
   m_Layer: 0
   m_Name: power-ups
@@ -1282,6 +1283,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114108880741631430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036036830427454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afaadaef771d49b4ab41f1b8fde95266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114179691146166790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1293,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46041679e1799c040994c23917cc8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 7
 --- !u!114 &114710366980573436
 MonoBehaviour:
   m_ObjectHideFlags: 1

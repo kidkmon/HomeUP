@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 212229405664085388}
   - component: {fileID: 95430534270508886}
   - component: {fileID: 65374968539699244}
+  - component: {fileID: 114360744452090632}
   - component: {fileID: 82676628690180698}
   m_Layer: 0
   m_Name: power-ups
@@ -1402,7 +1403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46041679e1799c040994c23917cc8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 6.5
 --- !u!114 &114242209467799376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1414,7 +1415,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46041679e1799c040994c23917cc8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 6.5
+--- !u!114 &114360744452090632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1969447089462688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afaadaef771d49b4ab41f1b8fde95266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114847459917052362
 MonoBehaviour:
   m_ObjectHideFlags: 1

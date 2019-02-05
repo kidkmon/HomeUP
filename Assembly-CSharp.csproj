@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\Pillow\PillowSpawn.cs" />
      <Compile Include="Assets\Scripts\Pillow\PlatformCollision.cs" />
      <Compile Include="Assets\Scripts\Pillow\Spawm.cs" />
+     <Compile Include="Assets\Scripts\PowerUp\RandomizePowerUp.cs" />
  <Reference Include="Cinemachine">
  <HintPath>C:/Users/Ocean/Documents/Unity/Unity Projects/HomeUp/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>

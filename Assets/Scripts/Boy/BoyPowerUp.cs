@@ -54,26 +54,24 @@ public class BoyPowerUp : MonoBehaviour {
 			PizzaPowerUp();
 		}
 		else if(powerUpNumber.Equals(5)){
-			TenisPowerUp();
+			StartCoroutine(TenisPowerUp());
 		}
 	}
 
 	//Collider logic
     void OnControllerColliderHit(ControllerColliderHit hit){
         if(hit.gameObject.CompareTag("PowerUp")){
-            GetComponents<AudioSource>()[1].Play();
-			PowerUps(hit.gameObject.GetComponent<Animator>().GetInteger("PowerUp"));
-            //StartCoroutine(DestroyPowerUp(hit.gameObject.GetComponent<Animator>(), hit.gameObject));
-			hit.gameObject.GetComponent<Animator>().SetTrigger("Destroy");
-			hit.gameObject.GetComponent<Animator>().SetInteger("PowerUp", 0);
-			hit.gameObject.SetActive(false);
+			StartCoroutine(DestroyPowerUp(hit.gameObject.GetComponent<Animator>(), hit.gameObject));
         }
     }
 
 	IEnumerator DestroyPowerUp(Animator animator, GameObject powerUp){
-        animator.SetTrigger("Destroy");
-        animator.SetInteger("PowerUp", 0);
-        powerUp.SetActive(false);
-		yield return new WaitForSeconds(.01f);
+		animator.SetTrigger("Destroy");
+		powerUp.GetComponent<BoxCollider>().isTrigger = true;
+		GetComponents<AudioSource>()[1].Play();
+		PowerUps(animator.GetInteger("PowerUp"));
+		yield return new WaitForSeconds(0.3f);
+		powerUp.SetActive(false);
+		powerUp.GetComponent<BoxCollider>().isTrigger = false;
     }
 }

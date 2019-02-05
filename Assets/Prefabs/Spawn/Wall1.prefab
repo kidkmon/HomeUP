@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 212525390534900396}
   - component: {fileID: 95735213397161552}
   - component: {fileID: 65388283718774792}
+  - component: {fileID: 114623730097985570}
   - component: {fileID: 82041874864640434}
   m_Layer: 0
   m_Name: power-ups
@@ -1307,6 +1308,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 8
+--- !u!114 &114623730097985570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898992670440048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afaadaef771d49b4ab41f1b8fde95266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212089319022835472
 SpriteRenderer:
   m_ObjectHideFlags: 1

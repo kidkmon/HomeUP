@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 212969151298206968}
   - component: {fileID: 95967743104185022}
   - component: {fileID: 65860901149248668}
+  - component: {fileID: 114303770479450672}
   - component: {fileID: 82235118907651214}
   m_Layer: 0
   m_Name: power-ups
@@ -1404,6 +1405,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topCollision: 1
   maxAngle: 45
+--- !u!114 &114303770479450672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1073403775651766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afaadaef771d49b4ab41f1b8fde95266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114321762647998422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1428,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46041679e1799c040994c23917cc8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 7
 --- !u!114 &114952475088083640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1440,7 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46041679e1799c040994c23917cc8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 7.5
 --- !u!212 &212003408250676070
 SpriteRenderer:
   m_ObjectHideFlags: 1

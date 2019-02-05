@@ -16,7 +16,7 @@ public class BoyMovement : MonoBehaviour {
     [HideInInspector] public bool tenisPowerUp;
 
     public static bool gameStarted;
-    public static float distanceTotal = 0.0f;
+    public static float distanceTotal;
 
     private CharacterController controller;
     
@@ -25,6 +25,10 @@ public class BoyMovement : MonoBehaviour {
     private Quaternion _playerRotation = Quaternion.identity;
     
     private Vector3 moveDirection = Vector3.zero;
+
+    void Awake(){
+        distanceTotal = 0;
+    }
 
     void Start(){
         controller = GetComponent<CharacterController>();
