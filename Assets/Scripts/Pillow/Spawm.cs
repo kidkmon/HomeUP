@@ -14,7 +14,7 @@ public class Spawm : MonoBehaviour {
 	}
 
 	void UpdatePositionWalls(){
-		int randomNumber = Random.Range(1,8);
+		int randomNumber = Random.Range(1,11);
 
 		GameObject obj = ObjectPooler._current.GetPooledObjects("Wall"+randomNumber.ToString()+"(Clone)");
 		

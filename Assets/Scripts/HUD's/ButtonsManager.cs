@@ -76,6 +76,7 @@ public class ButtonsManager : MonoBehaviour {
 		pausePanel.SetActive(false);
 		bgBlackPanel.SetActive(false);
 		player.SetActive(true);
+		BoyMovement.gameStarted = true;
 		follow.SetActive(true);
 	}
 

@@ -64,16 +64,16 @@ public class BoyMovement : MonoBehaviour {
     }
 
     void BoyControllerMovement(){
-        if(Input.GetAxis("Horizontal") < 0){
+        if(Input.acceleration.x < 0){
             _playerRotation.eulerAngles = new Vector3(0, 90, 0);
             transform.rotation = _playerRotation;
-            // transform.Translate(0, 0, -Input.accelerometer.x*Time.deltaTime*speed);
-            transform.Translate(0, 0, -Input.GetAxis("Horizontal")*Time.deltaTime);
+            transform.Translate(0, 0, -Input.acceleration.x*Time.deltaTime*speed);
+            //transform.Translate(0, 0, -Input.GetAxis("Horizontal")*Time.deltaTime);
         }
-        else if(Input.GetAxis("Horizontal") > 0){
+        else if(Input.acceleration.x > 0){
             _playerRotation.eulerAngles = new Vector3(0, -90, 0);
             transform.rotation = _playerRotation;
-            transform.Translate(0, 0, Input.GetAxis("Horizontal")*Time.deltaTime);
+            transform.Translate(0, 0, Input.acceleration.x*Time.deltaTime*speed);
         }
     }
 
